@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1>Вас пригласили поговорить в Matrix</h1>
+            <p>Выберите приложение, которое собираетесь использовать</p>
+        </section>
+        <section id="sectionVia">
+            <p>Ваша переписка будет использовать сервер <b><span id="spanServerName"></span></b></p>
+        </section>
+        <section>
+            <div class="app">
+                <p>
+                    <img src="icons/element.svg" alt="" class="icon">
+                <h2>Element</h2>
+                </p>
+                <p>Полнофункциональный клиент Matrix, используемый миллионами людей</p>
+                <p><a href="https://element.io/">Узнать больше</a></p>
+                <button id="buttonJoin">Продолжить</button>
+            </div>
+        </section>
+        <section>
+            <div class="app">
+                <p>
+                <h2>Другое приложение</h2>
+                </p>
+                <p>Вы можете использовать любой клиент Matrix, чтобы присоединиться к чату, используя его идентификатор
+                </p>
+                <button id="buttonCopyId">Копировать идентификатор</button>
+            </div>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

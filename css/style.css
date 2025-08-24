@@ -1,0 +1,88 @@
+:root {
+    --color-bg-gradient-upper: #00140b;
+    --color-bg-gradient-lower: #200030;
+    --color-fg-main: #ffffff;
+    --color-fg-a: #e282ff;
+    --font-main: 'Inter'
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter.ttf');
+}
+
+body, html {
+    margin: none;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(var(--color-bg-gradient-upper), var(--color-bg-gradient-lower));
+    background-attachment: fixed;
+    color: var(--color-fg-main);
+    font-family: var(--font-main);
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    padding: 14px;
+    background-color: #ffffff11;
+    border: 1px solid #ffffff23;
+    margin: 6px;
+    border-radius: 8px;
+}
+
+hr {
+    border: none; 
+    height: 1px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #ffffff23;
+}
+
+a {
+    text-decoration: none;
+    font-size: small;
+    color: var(--color-fg-a);
+}
+
+button {
+    border: none;
+    background-color: #ffffff11;
+    font-family: inherit;
+    color: inherit;
+    margin-top: 7px;
+    padding: 16px;
+    border: 1px solid #ffffff23;
+    border-radius: 8px;
+    font-size: large;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background-color: #ffffff33;
+}
+
+.app {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    border-radius: 8px;
+    width: 72px;
+    height: auto;
+}
