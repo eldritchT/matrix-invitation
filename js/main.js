@@ -9,9 +9,7 @@ function main() {
     } else {
         $("#sectionVia").hide()
     }
-    $("#buttonJoin").on("click", function () {
-        open(`element://vector/webapp/#/room/${window.location.hash.replace("#/", "")}`)
-    })
+    $("#buttonJoin").attr("href", `element://vector/webapp/#/room/${window.location.hash.replace("#/", "")}`)
     $("#buttonCopyId").on("click", function () {
         let chatId = window.location.hash.replace("#/", "").split("?")[0]
         try {
